@@ -10,8 +10,8 @@ from scipy.signal import butter, filtfilt, detrend
 class FaceDetectionProcessor(VideoProcessorBase):
     def __init__(self):
         self.face_cascade = cv2.CascadeClassifier(
-            cv2.data.haarcascades + "haarcascade_frontalface_default.xml"
-        )
+    os.path.join(os.path.dirname(__file__), "haarcascade_frontalface_default.xml")
+)
         self.green_values = []
         self.timestamps = []
         self.start_time = time.perf_counter()
