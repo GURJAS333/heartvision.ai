@@ -1,7 +1,7 @@
 streamlit
 streamlit-webrtc
 av
-opencv-python-headless
+opencv-python-headless<5
 numpy
 pandas
 scipy
